@@ -25,7 +25,7 @@ SECRET_KEY = 'zf#n6*ppu(m5n%@@el@nc)&6*qz9k*1qp*_$$ti^9r=3&e=e5g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 AUTH_USER_MODEL = 'user.User'
 
 # Application definition
