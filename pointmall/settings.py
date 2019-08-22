@@ -93,8 +93,12 @@ WSGI_APPLICATION = 'pointmall.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'point_mall',
+        'USER': 'root',
+        'PASSWORD': 'gk9dchs1324',
+        'HOST': 'point-mall.cspctptbebqh.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
