@@ -5,3 +5,7 @@ from django.http import HttpResponse
 def image_view(request, file_name):
     image_data = open('media/uploads/item_images/' + file_name, 'rb').read()
     return HttpResponse(image_data, content_type="image/JFIF")
+
+@api_view(['GET'])
+def root_view(request) :
+    return HttpResponse('Point Mall django Api')

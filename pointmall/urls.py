@@ -13,5 +13,6 @@ urlpatterns = [
     path('me/', include('user.urls.me_urls')),
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('histories/', include('item.urls.history_urls')),
-    path('tags/', include('item.urls.tag_urls'))
+    path('tags/', include('item.urls.tag_urls')),
+    path('', views.root_view)
 ]
